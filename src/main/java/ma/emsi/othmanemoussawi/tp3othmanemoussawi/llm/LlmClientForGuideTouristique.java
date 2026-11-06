@@ -38,7 +38,7 @@ public class LlmClientForGuideTouristique implements Serializable {
      * @param villeOuPays nom de la ville ou du pays.
      * @return la réponse du LLM au format JSON.
      */
-    public String envoyerRequete(String villeOuPays) {
-        return this.guideTouristique.chat(villeOuPays);
+    public String envoyerRequete(String villeOuPays, int nb) {
+        return this.guideTouristique.chat(villeOuPays, nb);
     }
 }
